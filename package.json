@@ -85,7 +85,7 @@
   "author": "German David Fajardo",
   "license": "ISC",
   "engines": {
-    "node": "16.13.0"
+    "node": "18.x"
   }
 }
 
