@@ -1,4 +1,4 @@
-/*const express = require('express');
+const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser') 
 const getDocumentByTipo = require('./backend/getDocumentByTipo.js');
@@ -23,10 +23,10 @@ app.listen(PORT, () => {
   console.log(`API listening on PORT ${PORT} `)
 })
 
-module.exports = app*/
+module.exports = app
 
 
-const express = require('express')
+/*const express = require('express')
 
 const app = express()
 const PORT = 4000
@@ -44,4 +44,4 @@ app.get('/about', (req, res) => {
 })
 
 // Export the Express API
-module.exports = app
+module.exports = app*/

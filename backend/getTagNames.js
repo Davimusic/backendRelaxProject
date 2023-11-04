@@ -1,7 +1,8 @@
-const connectToDatabase = require('./db.js');
+//const connectToDatabase = require('./db.js');
 
 async function getTagNames(req, res) {
-  console.log('Handling request to /api/getTagNames');
+  return res.send('This is my getTagNames..... ')
+  /*console.log('Handling request to /api/getTagNames');
   const db = await connectToDatabase();
   const collection = db.collection('primerRelaxProject');
 
@@ -26,7 +27,7 @@ async function getTagNames(req, res) {
   } catch (error) {
     console.error('Error fetching documents:', error);
     throw error;
-  }
+  }*/
 }
 
 module.exports = getTagNames;
