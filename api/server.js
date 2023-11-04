@@ -1,4 +1,4 @@
-const express = require('express');
+/*const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser') 
 const getDocumentByTipo = require('../backend/getDocumentByTipo');
@@ -26,6 +26,25 @@ module.exports = async (req, res) => {
         res.status(500).send(error.message);
         }
     });
-};
+};*/
 
 
+const express = require('express')
+
+const app = express()
+const PORT = 4000
+
+app.listen(PORT, () => {
+  console.log(`API listening on PORT ${PORT} `)
+})
+
+app.get('/', (req, res) => {
+  res.send('Hey this is my API running 🥳')
+})
+
+app.get('/about', (req, res) => {
+  res.send('This is my about route..... ')
+})
+
+// Export the Express API
+module.exports = app
